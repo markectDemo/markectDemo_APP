@@ -1,4 +1,5 @@
-import 'package:app/backgroundColor.dart';
+import 'package:app/navigation/sample_screen.dart';
+import 'package:app/page/main_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,23 +35,10 @@ class HomePage extends StatelessWidget {
           bottom: MediaQuery.of(context).viewInsets.bottom,
         ),
         child: Column(
-          children: [BackgroundColor(), const SizedBox(height: 500)],
+          children: [MainPage()],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'dw'
-            ),
-            BottomNavigationBarItem(icon: Icon(Icons.favorite), label: 'dw'),
-            BottomNavigationBarItem(icon: Icon(Icons.assignment), label: 'dw'),
-            BottomNavigationBarItem(icon: Icon(Icons.manage_accounts_rounded), label: 'dw')
-        ],
-        selectedItemColor: Colors.lightGreen,
-        ),
+      bottomNavigationBar: SampleScreen(),
     );
   }
 }
