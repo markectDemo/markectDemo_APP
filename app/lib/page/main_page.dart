@@ -14,11 +14,11 @@ class MainPage extends StatelessWidget {
               bottomRight: Radius.circular(20),
             ),
             child: Container(
-              height: 140,
+              height: 150,
               color: const Color.fromARGB(255, 106, 191, 75),
               child: SafeArea(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 17),
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -26,6 +26,7 @@ class MainPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: const [
+                          Padding(padding: EdgeInsets.only(top: 50)),
                           Text(
                             '오늘 저녁은 이걸로 ?',
                             style: TextStyle(
@@ -73,21 +74,37 @@ class MainPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 40),
             child: Container(
-            width: 380,
+            width: 500,
             height: 300,
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.shade300.withOpacity(0.5),
-                  spreadRadius: 4,
+                  color: Colors.black.withOpacity(0.2),
+                  spreadRadius: 10,
                   blurRadius: 10,
                   offset: Offset(1, 6)
                 )
               ]
             ),
-            child: Text('data')),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      width: 20,
+                      height: 20,
+                      child: Image(image: AssetImage('lib/assets/image/allmenu.png'), fit: BoxFit.cover, width: 20, height: 20,),
+                    )
+                  ],
+                ),
+                Row(
+
+                )
+              ],
+            )
+            ),
           ),
         ],
       ),
