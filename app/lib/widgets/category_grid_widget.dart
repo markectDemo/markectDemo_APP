@@ -7,8 +7,8 @@ class CategoryGridWidget extends StatelessWidget {
     return Column(
       children: [
         SizedBox(
-          width: 60,
-          height: 60,
+          width: 45,
+          height: 45,
           child: Image.asset(imagePath, fit: BoxFit.cover),
         ),
         const SizedBox(height: 5),
@@ -37,7 +37,7 @@ class CategoryGridWidget extends StatelessWidget {
     ];
 
     return Container(
-      width: 350,
+      width: 320,
       height: 250,
       decoration: BoxDecoration(
         color: Colors.white,

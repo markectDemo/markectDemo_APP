@@ -1,3 +1,4 @@
+import 'package:app/widgets/slide_card_widget.dart';
 import 'package:flutter/material.dart';
 import '../widgets/header_widget.dart';
 import '../widgets/category_grid_widget.dart';
@@ -8,10 +9,11 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: const [
-        HeaderWidget(),
-        SizedBox(height: 40),
-        CategoryGridWidget(),
+      children: [
+        const HeaderWidget(),
+        const SizedBox(height: 40),
+        const CategoryGridWidget(),
+        SlideCardWidget()
       ],
     );
   }
