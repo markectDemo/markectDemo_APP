@@ -65,6 +65,10 @@ flutter:
     - assets/image/korea.png
     - assets/image/nice.png
     - assets/image/star.png
+    - assets/image/BBQ.jpg
+    - assets/image/BHC.jpg
+    - assets/image/KFC.png
+    - assets/image/KYCHON.png
     # - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

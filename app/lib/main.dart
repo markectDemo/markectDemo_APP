@@ -29,15 +29,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
-      body: SingleChildScrollView(
-        padding: EdgeInsets.only(
-          bottom: MediaQuery.of(context).viewInsets.bottom,
+      resizeToAvoidBottomInset: true,
+      body:  SingleChildScrollView(
+          child: Column(
+            children: [MainPage()],
+          ),
         ),
-        child: Column(
-          children: [MainPage()],
-        ),
-      ),
       bottomNavigationBar: SampleScreen(),
     );
   }

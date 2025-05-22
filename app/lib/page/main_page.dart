@@ -8,13 +8,15 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        const HeaderWidget(),
-        const SizedBox(height: 40),
-        const CategoryGridWidget(),
-        SlideCardWidget()
-      ],
-    );
+    return SingleChildScrollView(
+          child: Column(
+            children: [
+              const HeaderWidget(),
+              const SizedBox(height: 40),
+              const CategoryGridWidget(),
+              SlideCardWidget(),
+            ],
+          ),
+        );
   }
 }
