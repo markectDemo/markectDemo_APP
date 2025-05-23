@@ -44,7 +44,8 @@ class CategoryGridWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.2),
+            color: Colors.black.withOpacity
+            (0.2),
             spreadRadius: 10,
             blurRadius: 10,
             offset: const Offset(1, 6),
