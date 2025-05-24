@@ -25,6 +25,7 @@ class CategoryGridWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.sizeOf(context);
     final List<Map<String, String>> categories = [
       {'image': 'assets/image/allmenu.png', 'label': '전체'},
       {'image': 'assets/image/star.png', 'label': '인기'},
@@ -37,8 +38,8 @@ class CategoryGridWidget extends StatelessWidget {
     ];
 
     return Container(
-      width: 320,
-      height: 250,
+      width: size.width*0.9,
+      height: size.height*0.28,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(10),
@@ -47,8 +48,8 @@ class CategoryGridWidget extends StatelessWidget {
             color: Colors.black.withOpacity
             (0.2),
             spreadRadius: 10,
-            blurRadius: 10,
-            offset: const Offset(1, 6),
+            blurRadius: 20,
+            offset: const Offset(1, 1),
           ),
         ],
       ),

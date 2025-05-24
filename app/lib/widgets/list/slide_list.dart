@@ -6,13 +6,13 @@ class SlideList extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size size = MediaQuery.sizeOf(context);
     return SizedBox(
-      height: 150,
+      height: size.height*0.18,
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Row(
           children: List.generate(10, (idx) {
             return Container(
-              width: 200,
+              width: size.width*0.52,
               margin: EdgeInsets.only(right: 20),
               color: Colors.white,
               alignment: Alignment.center,
