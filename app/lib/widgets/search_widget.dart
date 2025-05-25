@@ -1,3 +1,4 @@
+import 'package:app/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
 
 class SearchWidget extends StatelessWidget {
@@ -5,13 +6,8 @@ class SearchWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 6,
-      child: Column(
-        children: [
-          
-        ],
-      )
-      )    
+    return SafeArea(
+      child: Column(children: [HeaderWidget()],)
+      );
   }
 }

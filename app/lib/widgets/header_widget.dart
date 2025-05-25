@@ -1,3 +1,4 @@
+import 'package:app/widgets/search_widget.dart';
 import 'package:flutter/material.dart';
 
 class HeaderWidget extends StatelessWidget {
@@ -37,6 +38,10 @@ class HeaderWidget extends StatelessWidget {
                   height: 45,
                   child: TextField(
                     textAlignVertical: TextAlignVertical.center,
+                    readOnly: true,
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (_) => SearchWidget()));
+                    },
                     decoration: InputDecoration(
                       hintText: '매장 또는 매뉴 입력',
                       filled: true,
