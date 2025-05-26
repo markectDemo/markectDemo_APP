@@ -6,15 +6,15 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ClipRRect(
-      borderRadius: const BorderRadius.only(
-        bottomLeft: Radius.circular(20),
-        bottomRight: Radius.circular(20),
-      ),
-      child: Container(
-        height: 150,
-        color: const Color.fromARGB(255, 106, 191, 75),
-        child: SafeArea(
+    return SafeArea(
+      child: ClipRRect(
+        borderRadius: const BorderRadius.only(
+          bottomLeft: Radius.circular(20),
+          bottomRight: Radius.circular(20),
+        ),
+        child: Container(
+          height: 150,
+          color: const Color.fromARGB(255, 106, 191, 75),
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 15),
             child: Column(
@@ -40,7 +40,10 @@ class HeaderWidget extends StatelessWidget {
                     textAlignVertical: TextAlignVertical.center,
                     readOnly: true,
                     onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (_) => SearchWidget()));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => SearchWidget()),
+                      );
                     },
                     decoration: InputDecoration(
                       hintText: '매장 또는 매뉴 입력',

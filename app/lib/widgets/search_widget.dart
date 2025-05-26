@@ -6,8 +6,13 @@ class SearchWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Column(children: [HeaderWidget()],)
+    final Size size = MediaQuery.sizeOf(context);
+    return SingleChildScrollView(
+      child: Column(
+        children: [
+          HeaderWidget()
+          ],
+        )
       );
   }
 }

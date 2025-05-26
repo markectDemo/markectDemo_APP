@@ -8,6 +8,7 @@ class SlideCardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.sizeOf(context);
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
       child: Column(
