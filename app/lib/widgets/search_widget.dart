@@ -1,3 +1,4 @@
+import 'package:app/navigation/search_navigation_bar.dart';
 import 'package:app/widgets/header_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,8 @@ class SearchWidget extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          HeaderWidget()
+          const HeaderWidget(),
+          SearchNavigationBar()
           ],
         )
       );
