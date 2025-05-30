@@ -13,7 +13,6 @@ class SearchNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.sizeOf(context);
     return DefaultTabController(
       length: tabs.length,
       child: Scaffold(
@@ -23,7 +22,17 @@ class SearchNavigationBar extends StatelessWidget {
             ),
         ),
         body: TabBarView(
-          children: []
+          children: [
+            GridView.count(
+              crossAxisCount: 1,
+              children: List.generate(10, (index) {
+                return Container(
+
+                );  
+              },
+              )
+            )
+          ]
           ),
       )
       );

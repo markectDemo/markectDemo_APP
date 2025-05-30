@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:app/widgets/icon_widget.dart';
 
 class SlideList extends StatelessWidget {
+  const SlideList({super.key});
+
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.sizeOf(context);

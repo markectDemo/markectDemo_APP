@@ -11,7 +11,7 @@ class MainPage extends StatelessWidget {
     return SingleChildScrollView(
           child: Column(
             children: [
-              const HeaderWidget(),
+              const HeaderWidget(readOnly: true,),
               const SizedBox(height: 40),
               const CategoryGridWidget(),
               SlideCardWidget(),

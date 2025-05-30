@@ -1,6 +1,4 @@
 import 'package:app/navigation/sample_screen.dart';
-import 'package:app/navigation/search_navigation_bar.dart';
-import 'package:app/page/main_page.dart';
 import 'package:app/widgets/search_widget.dart';
 import 'package:flutter/material.dart';
 

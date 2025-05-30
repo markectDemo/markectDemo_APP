@@ -7,14 +7,15 @@ class SearchWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size size = MediaQuery.sizeOf(context);
-    return SingleChildScrollView(
+    return Material(
+      child: SingleChildScrollView(
       child: Column(
         children: [
-          const HeaderWidget(),
+          const HeaderWidget(readOnly: false,),
           SearchNavigationBar()
           ],
         )
-      );
+      ),
+    );
   }
 }
