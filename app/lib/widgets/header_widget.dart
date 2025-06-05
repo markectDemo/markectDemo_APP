@@ -1,9 +1,9 @@
-import 'package:app/widgets/search_widget.dart';
 import 'package:flutter/material.dart';
 
 class HeaderWidget extends StatelessWidget {
   final bool readOnly;
-  const HeaderWidget({super.key, required this.readOnly});
+  final VoidCallback? onTap;
+  const HeaderWidget({super.key, required this.readOnly, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -40,17 +40,12 @@ class HeaderWidget extends StatelessWidget {
                   child: TextField(
                     textAlignVertical: TextAlignVertical.center,
                     readOnly: this.readOnly,
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (_) => SearchWidget()),
-                      );
-                    },
+                    onTap: this.onTap,
                     decoration: InputDecoration(
-                      icon: Icon(Icons.search),
                       hintText: '매장 또는 매뉴 입력',
                       filled: true,
                       fillColor: Colors.white,
+                      prefixIcon: Icon(Icons.search, color: Color(0xFF2E7D32), size: 30.0,),
                       contentPadding: const EdgeInsets.symmetric(
                         vertical: 0,
                         horizontal: 20,

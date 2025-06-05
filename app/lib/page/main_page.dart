@@ -1,3 +1,4 @@
+import 'package:app/widgets/search_widget.dart';
 import 'package:app/widgets/slide_card_widget.dart';
 import 'package:flutter/material.dart';
 import '../widgets/header_widget.dart';
@@ -11,7 +12,10 @@ class MainPage extends StatelessWidget {
     return SingleChildScrollView(
           child: Column(
             children: [
-              const HeaderWidget(readOnly: true,),
+              HeaderWidget(
+                readOnly: true,
+                onTap: () => Navigator.push( context, MaterialPageRoute(builder: (_) => SearchWidget()))
+                ),
               const SizedBox(height: 40),
               const CategoryGridWidget(),
               SlideCardWidget(),

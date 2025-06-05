@@ -13,28 +13,7 @@ class SearchNavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: tabs.length,
-      child: Scaffold(
-        appBar: AppBar(
-          bottom: TabBar(
-            tabs: tabs
-            ),
-        ),
-        body: TabBarView(
-          children: [
-            GridView.count(
-              crossAxisCount: 1,
-              children: List.generate(10, (index) {
-                return Container(
-
-                );  
-              },
-              )
-            )
-          ]
-          ),
-      )
-      );
+    final Size size = MediaQuery.sizeOf(context);
+    return Container();
   }
 }

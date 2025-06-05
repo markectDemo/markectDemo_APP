@@ -9,12 +9,12 @@ class SearchWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: SingleChildScrollView(
-      child: Column(
-        children: [
-          const HeaderWidget(readOnly: false,),
-          SearchNavigationBar()
+        child: Column(
+          children: [
+            HeaderWidget(readOnly: false, onTap: null),
+            SearchNavigationBar(),
           ],
-        )
+        ),
       ),
     );
   }

@@ -1,4 +1,4 @@
-import 'package:app/navigation/navgationBar.dart';
+import 'package:app/navigation/navgation_bar.dart';
 import 'package:app/page/account_page.dart';
 import 'package:app/page/assignment_page.dart';
 import 'package:app/page/favorite_page.dart';
